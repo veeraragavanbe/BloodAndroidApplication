@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+   android:background="#00ffb4">
+   
+    <Spinner android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true" 
+    android:id="@+id/spinner1" 
+    android:layout_width="match_parent">
+    </Spinner>
+   
+   
+    <EditText android:layout_alignParentLeft="true" 
+    android:layout_height="wrap_content" 
+    android:hint="CITY" 
+    android:layout_below="@+id/spinner1"
+    android:id="@+id/editText1" 
+    android:layout_width="match_parent">
+    </EditText>
+    <ImageButton android:layout_width="wrap_content" 
+    android:src="@drawable/sea" 
+    android:id="@+id/imageButton1" android:layout_height="wrap_content" 
+    android:layout_centerInParent="true" android:background="#00ffb4">
+    </ImageButton>
+    
+    
+    
+</RelativeLayout>

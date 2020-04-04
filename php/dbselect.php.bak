@@ -1,0 +1,31 @@
+<?php
+//header('Content-type:applicaion/json');
+
+$host="localhost";
+$user="root";
+$pass="";
+$db_name="blood";
+
+$connection = mysqli_connect($host,$user,$pass,$db_name);
+
+if(mysqli_connect_errno())
+{
+die("connection field".mysqli_connect_error()."(".mysqli_connect_errno().")");
+}
+$query = "SELECT * FROM register";
+
+$result = mysqli_query($connection,$query);
+
+$rows=array();
+
+while($row = mysqli_fetch_array($result))
+{
+	array_push($rows,array('name'=>$row[0],'age'=>$row[1],'blood'=>$row[2],'mobile'=>$row[3],'email'=>$row[4],'address'=>$row[5],'city'=>$row[6]));
+
+}
+
+echo json_encode(array("result"=>$rows));
+
+
+
+?>

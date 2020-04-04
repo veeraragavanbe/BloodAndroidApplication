@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="match_parent" android:layout_width="wrap_content" android:background="#00ffb4">
+  
+     <TextView android:layout_width="wrap_content" 
+     android:id="@+id/textView1" 
+     android:text="ENTER YOUR DETAILS" 
+     android:layout_alignParentTop="true"
+     android:layout_centerInParent="true"
+     android:layout_height="wrap_content" >
+     </TextView>
+  
+     <EditText android:id="@+id/editText1" 
+      android:height="0.1dp" 
+      android:layout_width="match_parent" 
+      android:layout_height="wrap_content" 
+      android:hint="NAME" 
+      android:layout_below="@+id/textView2" 
+      android:textStyle="bold"
+      android:textColorHint="#2c03fc" android:typeface="sans">
+      </EditText>
+         
+     <EditText android:layout_height="wrap_content" 
+     android:id="@+id/editText2" 
+     android:hint="AGE"
+     android:layout_alignParentLeft="true" 
+     android:layout_below="@+id/editText1" 
+     android:layout_width="match_parent" 
+     android:textStyle="bold"
+      android:textColorHint="#2c03fc">
+     </EditText>
+     
+     <Spinner android:id="@+id/spinner1" 
+     android:layout_height="wrap_content" 
+     android:layout_below="@+id/editText2" android:layout_width="match_parent">
+     </Spinner>
+     
+     <EditText android:layout_height="wrap_content"
+      android:id="@+id/editText4" 
+      android:hint="PHONE NUMBER" 
+      android:layout_below="@+id/spinner1" 
+      android:layout_width="match_parent" 
+      android:phoneNumber="true" 
+      android:textStyle="bold" 
+      android:textColorHint="#2c03fc">
+     
+      </EditText>
+      
+      <EditText android:layout_height="wrap_content" 
+      android:id="@+id/editText5" 
+      android:hint="EMAIL ID" 
+      android:layout_below="@+id/editText4" 
+      android:layout_width="match_parent" 
+      android:textColorHint="#2c03fc" 
+      android:textStyle="bold">
+    
+      </EditText>
+           
+      <EditText android:layout_height="wrap_content"
+      android:id="@+id/editText6" 
+      android:hint="ADDRESS" 
+      android:layout_below="@+id/editText5" 
+      android:layout_width="match_parent" 
+      android:textStyle="bold" 
+      android:textColorHint="#2c03fc">
+      </EditText>
+      
+      <EditText android:layout_height="wrap_content"
+      android:id="@+id/editText7" 
+      android:hint="CITY" 
+      android:layout_below="@+id/editText6" 
+      android:layout_width="match_parent" 
+      android:textStyle="bold" 
+      android:textColorHint="#2c03fc">
+      </EditText>
+      
+      <ImageButton android:id="@+id/imageButton1" 
+      android:src="@drawable/register" 
+      android:layout_height="wrap_content" 
+      android:layout_width="wrap_content" 
+      android:layout_below="@+id/editText7"
+      android:layout_alignLeft="@+id/editText7" 
+      android:layout_centerHorizontal="true" 
+      android:layout_centerVertical="true" 
+      android:background="#00ffb4">
+       </ImageButton>
+       
+      <ImageButton android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:id="@+id/imageButton2" 
+      android:src="@drawable/home" 
+      android:layout_alignParentBottom="true" android:background="#00ffb4">
+      </ImageButton>
+      
+      
+       
+</RelativeLayout>
